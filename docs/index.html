@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Luigi PWA Example</title>
+	<link rel='stylesheet' href='./public/luigi.css' rel="preload" as="style">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link rel="manifest" href="./manifest.webmanifest" />
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+          .register("./serviceWorker.mjs", {
+            type: 'module',
+          })
+          .then(res => console.log("service worker registered"))
+          .catch(err => console.log("service worker not registered", err))
+      })
+    }
+
+  </script>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="./public/luigi.js"></script>
+    <script src="./config.js"></script>
+</body>
+
+</html>

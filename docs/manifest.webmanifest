@@ -1,0 +1,19 @@
+{
+    "name": "Luigi PWA",
+    "short_name": "LuigiPWA",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#2deb8a",
+    "theme_color": "#2deb8a",
+    "orientation": "landscape",
+    "icons": [
+      {
+        "src": "./luigi_green.png",
+        "type": "image/png", "sizes": "512x512"
+      },
+      {
+        "src": "./luigi_green.png",
+        "type": "image/png", "sizes": "192x192"
+      }
+    ]
+  }
