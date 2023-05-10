@@ -11,7 +11,7 @@
     "build_deps": "cp -r node_modules/@luigi-project/core docs/public && cp -r node_modules/@luigi-project/client docs/public_client",
     "assets": "node createAssetsFile.js > docs/assets.js",
     "build": "npm run build_deps && npm run assets",
-    "start": "live-server public --port=4101 --cors"
+    "start": "live-server docs --port=4101 --cors"
   },
   "author": "",
   "license": "ISC",
